@@ -1,0 +1,227 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'quicksand',sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #dfe0e5;
+}
+header{
+    min-width: 500px;
+    width: 100%;
+    max-width: 2000px;
+    padding-block: 1rem;
+    margin-inline: auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    z-index: 9999;
+    background-color: #ffffff;
+
+    position: relative;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.25), 0 0 40px rgba(0,0,0,0.15) inset;
+}
+header::before,::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+header .brand-logo img{
+    width: 150px;
+}
+header nav ul{
+    padding-left: 0;
+    display: flex;
+    gap: 3rem 2rem;
+    justify-content: center;
+}
+header nav ul li{
+    list-style-type: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: grey;
+    transition: 0.25s;
+}
+.active{
+    color: red;
+}
+header nav ul li a:hover{
+    color: red;
+}
+header .search-bar{
+    width: 800px;
+    height: 35px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    padding: 5px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+}
+header .search-bar form input{
+    flex: 1;
+    height: 15px;
+    width: 770px;
+    border: none;
+    outline: none;
+}
+header .search-bar form button{
+    flex: 1;
+    padding: 5px;
+    background-color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+header .search-bar form button i{
+    color: grey;
+    background-color: none;
+}
+header .user-and-language ul{
+    padding-left: 0;
+    display: flex;
+    gap: 3rem 2.5rem;
+    justify-content: center;
+}
+header .user-and-language ul li{
+    list-style-type: none;
+}
+header .user-and-language ul li a{
+    text-decoration: none;
+    color: grey;
+    transition: 0.25s;
+    font-size: 1.4rem;
+}
+header .user-and-language ul li a:hover{
+    color: red;
+}
+header .new-thread button{
+    /* display: flex; */
+    border: none;
+    outline: none;
+    height: 35px;
+    width: 200px;
+    border-radius: 50px;
+    background-color: #B92D27;
+    cursor: pointer;
+    color: white;
+    font-size: 12pt;
+    transition: 0.25s;
+    /* font-weight: 600; */
+    /* text-align: left; */
+}
+header .new-thread button:hover{
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    background-color: white;
+    color: #B92D27;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.left-ads{
+    float: left;
+    margin-top: 20px;
+}
+.left-ads img{
+    width: 350px;
+    padding: 15px;
+    background-color: #f5f5f5;
+    /* margin: 70px 230px; */
+}
+.content{
+    margin-top: 20px;
+    width: 750px;
+    height: 100%;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+.picture-and-user{
+    padding-left: 25px;
+    padding-top: 25px;
+}
+.picture-and-user img{
+    float: left;
+    max-width: 50px;
+    margin-right: 10px;
+}
+.picture-and-user h1,a{
+    display: inline;
+}
+.follow{
+    text-decoration: none;
+    color: #5c87fb;
+}
+.name{
+    font-weight: 600;
+    font-size: 16px;
+}
+.titles{
+    color: #5e5e5e;
+    line-height: 1px;
+}
+.topic{
+    margin: 25px;
+}
+.quotes{
+    font-style: italic;
+    font-weight: bold;
+}
+.topic .topic-pictures img{
+    object-fit: cover;
+    border-radius: 10px;
+    position: relative;
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+.reaction{
+    margin-top: 25px;
+}
+.reaction button{
+    border: solid 1px #5e5e5e;
+    background-color: #dfe0e5;
+    width: 100px;
+    height: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.like{
+    color: #008DDA;
+}
+.more{
+    position: relative;
+    margin-left: 180px;
+}
+.right-ads{
+    float: right;
+    margin-top: 20px;
+}
+.right-ads img{
+    width: 350px;
+    padding: 15px;
+    background-color: #f5f5f5;
+}
+footer{
+    font-weight: bold;
+    margin-top: 50px;
+    width: 100%;
+    height: 100px;
+    background-color: #f2f2f2;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
